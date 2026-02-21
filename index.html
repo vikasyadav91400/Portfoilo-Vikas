@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vikas Yadav | Developer Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:rgb(50,75,158);
+    color:white;
+}
+
+header{
+    background:black;
+    padding:20px;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1100px;
+    margin:auto;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+}
+
+nav ul li a:hover{
+    color:violet;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:violet;
+}
+
+section{
+    padding:80px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.home{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.home img{
+    width:300px;
+    border-radius:10px;
+}
+
+.highlight{
+    color:violet;
+}
+
+h2{
+    margin-bottom:20px;
+    color:violet;
+}
+
+.skills ul{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    list-style:none;
+    gap:10px;
+}
+
+.skills li{
+    background:#222;
+    padding:10px;
+    text-align:center;
+    border-radius:5px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:#222;
+    padding:20px;
+    border-radius:8px;
+}
+
+.contact form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact input,
+.contact textarea{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+.contact button{
+    padding:10px;
+    border:none;
+    background:violet;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
+
+@media(max-width:768px){
+    .home{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .home img{
+        margin-top:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <div class="logo">Vikas Yadav</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="home">
+    <div>
+        <h1>Hi, I'm <span class="highlight">Vikas Yadav</span></h1>
+        <p>I am a Web Developer passionate about building modern websites.</p>
+    </div>
+    <img src="bg.png.jpeg" alt="Profile Image">
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science student and passionate developer.
+        I love creating responsive and modern websites using HTML, CSS and Python.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>MySQL</li>
+        <li>Git</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Building Material Shop Management</h3>
+            <p>Python based shop inventory and billing system.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Fake News Detection</h3>
+            <p>Machine learning project for detecting fake news.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>Personal responsive website using HTML & CSS.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Vikas Yadav | All Rights Reserved
+</footer>
+
+</body>
+</html>
